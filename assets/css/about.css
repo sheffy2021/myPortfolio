@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #eee;
+    font-family: Open Sans;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+}
+
+.about{
+    margin: 8%;
+    display: flex;
+    /* padding: 30px 8%; */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    transition: 0.3s ease;
+}
+
+.about-image{
+    /* width: 50%; */
+    /* margin-top: 20px; */
+    flex: 1;
+    display: flex;
+}
+
+.about-image img{
+    /* height: 100%; */
+    width: 100%;
+}
+.about-me{
+    margin: 20px;
+    flex: 2;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+}
+
+.about-me p{
+    padding: 30% 20%;
+}
+
+#surname{
+    font-weight: 900;
+}
+
+@media(max-width:600px){
+   .about{
+    flex-direction: column;
+}
+.about-me{
+    flex: 1;
+}
+
+}
+

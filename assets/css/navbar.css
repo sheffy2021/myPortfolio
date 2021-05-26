@@ -1,0 +1,81 @@
+nav{
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    /* height: 10%; */
+    display: flex;
+
+    justify-content: space-between;
+    padding: 0% 8%;
+    /* display: flex; */
+    /* justify-content: center; */
+    align-items: flex-start;
+    transition: 0.5s ease;
+}
+
+.logo-wrapper{
+    margin: 4vh 0px 3vh 0px;
+    font-size: 19px;
+    /* margin-left: 2%; */
+}
+
+.logo-wrapper .logo{
+    font-size: 25px;
+    color: dodgerblue;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav-items{
+    display: flex;
+}
+
+.nav-items .nav-link{
+    font-size: 17px;
+    padding: 25px;
+    color: dodgerblue;
+    text-decoration: none;
+    /* background: red; */
+    
+}
+
+.nav-items .nav-link:hover{
+    /* border-radius: 4px; */
+    background: dodgerblue;
+    color: white;
+}
+
+
+/* HIDE HAMBURGER BY DEFAULT ON BIG SCREEN */
+.hamburger-wrapper{
+    display: none;
+    color: dodgerblue;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* MEDIA QUERY */
+
+@media(max-width:600px){
+.hamburger-wrapper{
+    display: block;
+    padding: 19px;
+    }
+
+    .nav-items .nav-link{
+        
+        text-align: right;
+        /* background: red; */
+    }
+    
+    .nav-items{
+        display: none;
+    }
+
+    .open-nav-items{
+    display: flex;
+    margin-top: 15vh;
+    flex-direction: column;
+    width: 100%;
+}
+
+}

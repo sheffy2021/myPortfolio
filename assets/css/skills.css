@@ -1,0 +1,45 @@
+/* RESET DEFAULT STYLING */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #eee;
+    font-family: Open Sans;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+}
+
+.skills{
+    width: 100%;
+    padding: 8%;
+    transition: 0.3s ease;
+}
+
+.html, .css, .javascript{
+    display: flex;
+}
+
+.skill-icon-container{
+    font-size: 50px;
+    width: 20%;
+    margin-bottom: 20px;
+    color: rgb(45, 46, 65);
+}
+
+.skill-description{
+    font-size: 17px;
+    color: rgb(45, 46, 65);
+}
+
+@media(max-width:480px){
+    .skill-icon-container{
+    font-size: 40px;
+    width: 70px;
+}
+.skill-description{
+    font-size: 14px;
+    width: 300px;
+}
+}
