@@ -10,22 +10,25 @@ body{
     /* font-family: Georgia, 'Times New Roman', Times, serif; */
 }
 
+.contact-info{
+    display: flex;
+    margin: 5% 10%;
+    justify-content: center;
+
+}
+
 .box{
-    position: absolute;
-    padding: 5px;
-    top: 50%;
-    left: 50%;
+    padding: 10px;
     width: 400px;
-    transform: translate(-50%, -50%);
     /* background: rgba(0, 0, 0, 0.6); */
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
     border-radius: 10px;
+    flex: 2;
     
 }
 
 .box h2{
-    margin: 20px;
-    padding: 0px;
+    padding-top: 20px;
     color: rgb(0, 0, 0);
     text-align: center;
 }
@@ -68,9 +71,11 @@ body{
 .box input[type="submit"]{
     border: none;
     outline: none;
-    color: rgb(10, 10, 10);
+    /* color: rgb(10, 10, 10); */
+    color: white;
     background: #03a9f4;
     padding: 10px 20px;
+    margin: 10px 0px;
     cursor:pointer;
     border-radius: 5px;
     /* transition: font-weight 0.8s ease; */
@@ -90,9 +95,49 @@ textarea{
     font-weight: bold;
 }
 
-@media(max-width:400px){
-    .box{
-        width: 280px;
-    }
+.my-contact{
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    margin-left: 30px;
+    border-radius: 10px;
 
+}
+
+i{
+    margin-top: 20px;
+    color: dodgerblue;
+}
+
+.my-contact p{
+    margin: 8px 0;
+}
+
+.title{
+    font-weight: 500;
+}
+
+
+@media(max-width:650px){
+    .box{
+        width: 100%;
+    }
+    
+    .contact-info{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .box{
+        
+    width: 100%;
+    margin: 10%;
+    flex: 1;
+}
+.my-contact{
+    width: 100%;
+    margin-left: 0px;
+}
 }
