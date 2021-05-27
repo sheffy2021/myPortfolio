@@ -123,9 +123,8 @@ body{
     cursor: pointer;
     font-size: 25px;
     border-radius: 4px;
-    margin: 7px;
     box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.459);
-    padding: 4px 12px;
+    padding: 2% 4%;
     color: dodgerblue;
     
 }
@@ -155,9 +154,11 @@ body{
 }
 
 .services{
-   
     flex: 1;
-   
+}
+
+.intro-icons i{
+    margin: 2px;
 }
     
 }
