@@ -50,17 +50,33 @@ body{
 
 .web-development{
     /* background: chartreuse; */
-    border-bottom: 1px solid rgba(0, 0, 0, 0.459);
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.459); */
     margin: 10px;
     padding: 10px;
+    position: relative;
 }
 
 .photo-editing{
     /* background: chartreuse; */
     margin: 10px;
     padding: 10px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.459);
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.459); */
+    position: relative;
 }
+
+
+.web-development::after, .photo-editing::after{
+    content: "";
+    background: rgb(245, 158, 124);
+    width: 60%;
+    height: 1px;
+    position: absolute;
+    border-radius: 2px;
+    bottom: 0;
+    left: 20%;
+    transform: translateX(-25%);
+}
+
 
 .android-app-development{
     /* background: chartreuse; */
@@ -160,6 +176,12 @@ body{
 .intro-icons i{
     margin: 2px;
 }
+
+.web-development::after, .photo-editing::after{
+   
+    transform: translateX(-15%);
+}
+
     
 }
 
